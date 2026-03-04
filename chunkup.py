@@ -1,11 +1,10 @@
 import os
 import numpy as np
 
-os.chdir('/stratagem/processed_16s/')
 cwd = os.getcwd()
 
 chunk_size = 14
-seq = '14test.txt'
+seq = 'test.txt'
 
 #if given text file, run this function to remove newlines
 def process_text_file(file):
@@ -53,4 +52,5 @@ def chunked_up_list(seq, chunk_size):
 # #print first and last chunk, number of iterations to check
 # print(chunked_seqs_2[0])
 # print(chunked_seqs_2[-1])
+
 # print(len(chunked_seqs_2))
