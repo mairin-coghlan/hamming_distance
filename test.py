@@ -4,7 +4,7 @@ from scipy.spatial.distance import hamming
 from chunkup import chunked_up_list, process_text_file
 
 ref_seq = 'ecoli.fasta'
-example_seq = '14test.txt'
+example_seq = 'test.txt'
 chunk_size = 14
 score_list = []
 
@@ -54,4 +54,5 @@ hamming_data.to_csv(data_file, sep='\t')
 with open(data_file, 'r') as f:
      content = f.read()
 with open(data_file, 'w') as f:
+
      f.write('Reference Sequence: ' + ref_name + '\n' + content)
